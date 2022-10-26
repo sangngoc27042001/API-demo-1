@@ -1,4 +1,4 @@
-CLASSES = ['one', 'peace', 'rock', 'stop']
+CLASSES = ['fist', 'like', 'ok', 'one', 'palm', 'peace', 'rock', 'stop']
 
 from array import array
 import mediapipe as mp
@@ -38,7 +38,7 @@ def extractLandmarks(frame):
     return landmarks
 
 
-myModelKeras = keras.models.load_model('static_model_1')
+myModelKeras = keras.models.load_model('weights/static_model_1_1')
 print(myModelKeras.summary())
 
 def returnClass(frame):
